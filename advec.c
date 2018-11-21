@@ -59,11 +59,11 @@ void Lax(float *u, float *u_f){
 		for(j=0;j<N-2;j++){
 			ub[j+1] = 0.5*(u[j+2]+u[j]);
 			u_f[j+1] = ub[j+1] - (0.5 * (delta_t/delta_x) * (F[j+2] - F[j]));
-			/*ahora actualizamos u*/
 		}
-		
+								
+		/*ahora actualizamos u*/
 		for(j=0;j<N;j++){
-		u[j]= u_f[j];
+		u[j= u_f[j];
 		}
 	}
 }

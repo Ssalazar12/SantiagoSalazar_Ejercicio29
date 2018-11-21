@@ -10,4 +10,4 @@ cd $PBS_O_WORKDIR # este es el directorio desde donde se ejecuto qsub
 rm -f resultado.pdf
 gcc -o advec advec.c
 ./advec
-python plots.py 
+python3 plots.py 
